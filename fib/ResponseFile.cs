@@ -43,7 +43,7 @@ namespace fib
             Console.Write("Author name: ");
             string author = Console.ReadLine();
 
-            string responseContent = $"fib bundle --language {languages} --output {output}";
+            string responseContent = $"bundle --language {languages} --output {output}";
             if (note) responseContent += " --note";
             responseContent += $" --sort {sort}";
             if (removeEmptyLines) responseContent += " --remove-empty-lines";
